@@ -14,24 +14,24 @@ const PORT = process.env.PORT || 8080;
                 
                                                
 // Conexion a la Base de Datos 
-/* const conexion = mysql.createConnection({
+ const conexion = mysql.createConnection({
    
     host: process.env.HOST,
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE
-}); */
+}); 
 
        
 //Hacer funcionar
-/* 
+ 
 conexion.connect(function(err){
     if (err){
         console.log(`Error en la Conexion  !!! ${err.stack} `);
         return;
     }
     console.log(`Conectado a la Base de Datos ${process.env.DATABASE} `);
-}) */
+}) 
 
 
 
@@ -119,7 +119,7 @@ app.get('/adopcion', (req, res)=>{
     });   
 })
 
-/* app.post('/adopcion' , (req, res)=>{
+ app.post('/adopcion' , (req, res)=>{
     
    
 
@@ -157,15 +157,15 @@ app.get('/adopcion', (req, res)=>{
       });
     } 
 }); 
- */
+ 
 app.get('/adopciones', (req, res) =>{ 
 
     res.render('adopciones', {
         titulo: 'Animales Adoptados'
     }); 
-    //let sql = 'SELECT * FROM adopcion';  
+    let sql = 'SELECT * FROM adopcion';  
       
-     /* conexion.query(sql,(err,result)=>{ 
+      conexion.query(sql,(err,result)=>{ 
        
         if(err) throw err;
         res.render('adopciones', {
@@ -173,7 +173,7 @@ app.get('/adopciones', (req, res) =>{
            results: result,    
         });  
      }
-     ) */
+     ) 
 } )
 
  
@@ -221,8 +221,8 @@ app.get('/sanbernardo', (req, res) =>{
 } ); 
 
 app.listen(PORT, () => {
-    //console.log(`El servidor esta trabajando en el Puerto ${PORT}`
-    // );
+    console.log(`El servidor esta trabajando en el Puerto ${PORT}`
+     );
 } );
 
 
