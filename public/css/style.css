@@ -1,0 +1,33 @@
+body{
+    background: #EDECEB;
+}
+.cuadrado{
+  width: 1100px;          
+  height: 700px;          
+  background: #B3D0D9;        
+  
+}
+
+.buttons{
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a{
+  text-decoration: 28px;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #78c0d6;
+  color: #282623;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(0, 0, 5);
+
+}
+
+.buttons a:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,38 @@
+
+<div class="container">
+ 
+ <div  class="text-center m-5">
+     <hr>
+     <h1>Formulario de Adopcion</h1>
+     <hr>
+ </div>
+
+
+<div class="container- fluid row">
+    <form action="./adopcion" method="post"> <!-- aca es donde lo dirijo para que me envie los datos -->
+      <div class="mb-3 row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre del responsable: </label>
+      <div class="col-sm-10">
+        <input type="text"  class="form-control" id="nombre" name="nombre" placeholder="Nombre del responsable" >
+      </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="precio" class="col-sm-2 col-form-label">Nombre de la mascota: </label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="mascota" id="mascota"> <!-- aggregandole su name , osea su nombre por donde o vamos a llamar, hace traer lo que ingresamosn por teclado -->
+      </div>
+      <div class="mb-3 p-2 text-center">
+        <input type="submit" class="btn btn-outline-success w-50 " value="Enviar datos">
+       </div>  
+
+       <div class="text-center">
+        <h2 class="text-danger">
+            {{ validacion }}
+        </h2>
+       </div>
+
+     </div>
+</form>
+</div>
+
+</div>

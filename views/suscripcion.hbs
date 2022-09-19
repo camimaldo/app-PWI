@@ -1,0 +1,48 @@
+
+<div class="container-fluid">
+ 
+ <div  class="text-center m-5">
+     <hr>
+     <h1>Formulario de Suscripcion</h1>
+     <hr>
+ </div>
+
+
+<div class="container row ">
+    <form action="./suscripcion" method="post"> 
+      <div class="mb-3 row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+      <div class="col-sm-10">
+        <input type="text"  class="form-control" id="nombre" name="nombre" placeholder="Ingrese su Nombre" >
+      </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email: </label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su email"> 
+      </div>
+      </div>
+      <div class="mb-3 row">
+       <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Comentarios:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control " id="exampleFormControlTextarea1" placeholder="Comentario" ></textarea>
+        </div>
+      </div>
+      <div class="mb-3 p-2 text-center">
+        <input type="submit" class="btn btn-success w-50 " value="Me suscribo">
+       </div>  
+         
+       <div class="text-center">
+        <h2 class="text-danger">
+            {{ validacion }}
+        </h2>
+       </div>
+
+     
+</form>
+</div>
+</div>
+
+
+
+
